@@ -1,0 +1,79 @@
+## For Backend Testing of functions
+1. cd into functions directory
+2. run "firebase emulators:start" command
+
+## Deploying to FireBase : static-Front_End
+1. npm run build
+2. npm install -g firebase-tools
+3. firbase login 
+4. firebase init => initialize firebase
+    i) Y => proceed
+    ii) hosting : Config files for firebase Hosting and GitHub => select firebase feature to setup directory :- Arraw keys to move up-down and press 'space-bar' to select
+    iii) directory : Select default project for this directory => Exixting FireBase project
+    Note : firebase login --reauth => Error: Failed to list Firebase projects.
+
+    iv) what do you want to use as your public directory => 'build'
+    v) Config single page app => Yes
+    vi) Automatic diploy with GitHub : Y/N
+    vii) File build/index.html already exists. Overwrite? Yes  
+5. npm run build*
+6. firebase deploy/firebase deploy --only hosting
+
+
+## deploy function on firebase (i.e Back_End)
+1. cd into functions folder
+2. "firebase deploy --only functions" => probably fail to deploy functions because here we have to upgrade into stripe blaze.
+3. "go to firebase_funtions section of the project on firebase coppy the link and paste it into "axios.js" line number 5.
+5. "cd .." => cd into app directory
+6. "npm run build" => buid the app
+
+
+
+
+## linux command 
+1. "touch .gitignore" => file created in the directory
+2. "rm .gitignore" => file deleted in the directory
+3. "ls" => shows files of current directory.
+
+## GIT 
+1. 'git init' => create a repository and initialize git in current directory and 
+2. 'git status' => checks the staus of branch
+3. 'git add .'  => add all changed files to stage for commit (i.e all changed files added)
+4. 'git reset .'  => removed all  staged files which are not commited and deletes.
+5. 'git reset --hard'  => Un-staged  and deletes all un-commited files permanently.
+6. 'git commit -m "message xyz for commit" ' => commit and add all staged files to (master) branch 
+
+7. 'git branch' => shows branch names and highlights current branch.
+8. 'git branch branchName' => creates a new branch.
+9. 'git checkout branchName' => jums/selects to given branch. Now anything changes doesn't affects the master branch.
+
+10. 'git checkout -b branchName' => creates a new branch and jump to that branch (i.e create & selects the branch ) (e.g clone1).
+    (a) "touch .cloneTest.txt2" => create a file in clone1 branch.
+
+11. When changes are testing phase  and work in progress , here the the files and working directories are saved  without commiting.
+    (a) 'git stash -u' => Saved working directory and index state WIP on clone1: 3982292 test file created in clone1 branch. 
+    (b) 'git stash pop' =>Any time resume working on saved directory in  stash  by poping-Up.
+
+12.  When commited changes of otherBranch have to be merged into master branch.
+    (a) "git checkout master" => First go into master branch by 
+    (b) "git merge branchName"=> merge particular branch into master by name. 
+
+13. "git merge branchName --squash"=> bundle all the commits of branchName
+
+14. Pushing locol repository into git repository.
+    (a) First create a new repository on git-hub.
+    (b) "git remote add origin https://g" => connects local codes to git remote repository.
+    (c) "git remote" => remote connections.
+    (d) "git remote -v" => shows URL of remote to fetch/pull.
+    (e) "git push -u origin master" => push files/repository to the git remote (master) repository.
+    (f) At last type yes to continue and fresh the git repository page.
+
+15. Pull someone's repository fork it (i.e do some changes) and push back (i.e modified pull repo) for sticker.
+    (a) "fork" click on fork of particular repo =>  coppy code into your git-hub account.
+    (b) "git clone repoAddress_in_https " => Coppy code of remote repository into local directory of computer.
+    (c) "npm install" => To install all the dependencies.
+    (d) "git checkout -b branchName1" => create/initialise new branch for working;.
+    (e) "Do changes"
+    (f) "git push origin branchName1" => It will push the branch into git-hub.
+            On git-hub a pull request is shown.
+            Pull request is advanced merge into master branch by compairing/reviewing codes.

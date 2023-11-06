@@ -1,0 +1,131 @@
+{
+  "main": {
+    "name": "Aman Singh",
+    "occupation": "Full stack web developer & ReactJS Developer ",
+    "description": "Full Stack React Developer by Day, Founder && Freelancer by Night.",
+    "image": "amanDp.jpg",
+    "bio": "My name is Aman, I'm a Full Stack React JS Developer. Currently I'm working as freelancer ",
+    "contactmessage": "Get in touch with me to receive further details.",
+    "email": "chauhanaman4002@gmail.com.com",
+    "phone": "+91 8750048406",
+    "address": {
+      "street": "H No. 648/22, Shivaji Park",
+      "city": "Gurgaon",
+      "state": "Haryana",
+      "country": "India",
+      "zip": "122001"
+    },
+    "website": "",
+    "resumedownload": "https://drive.google.com/file/d/1CVvs8buceaZRwKXLaD1QVFuCeisCSB4S/view?usp=sharing",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/profile.php?id=100010414778758",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/aman-singh-1907711b6/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/aman_chauhan0320/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/aman5873",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "",
+    "education": [
+      {
+        "High school": "P.S Central School",
+        "Intermidiate school": "S.D Sr. Sec. School ",
+        "University": "IGNOU New Delhi",
+        "Batchlor degree": "Batchlor Of Computer Application",
+        "graduated": "Persuing BCA"
+      }
+    ],
+    "work": [
+      {
+        "company": "CoopEarn Internship",
+        "title": "Web Developer",
+        "years": "November 2021",
+        "description": "Built prototype site in Django to digitize the process of random coupon generation with unique QR-code."
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "75%"
+      },
+      {
+        "name": "NodeJs",
+        "level": "80%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Javascript",
+        "level": "80%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "CSS",
+        "level": "80%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "60%"
+      },
+      {
+        "name": "Python",
+        "level": "70%"
+      },
+      {
+        "name": "C++",
+        "level": "60%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Amazon Clone with React",
+        "category": "Amazon Clone built with ReactJS & stripe",
+        "image": "amazon-clone.png",
+        "url": "https://project-5db03.firebaseapp.com/"
+      },
+      {
+        "title": "My_Blog",
+        "category": "My first web development project  My_Blog",
+        "image": "blog.png",
+        "url": "https://aman5873.github.io/demoBlog/"
+      },
+      {
+        "title": "WeatherApp",
+        "category": "It Shows city’s weather using Fetch API",
+        "image": "weather.png",
+        "url": "https://weather07-app.herokuapp.com/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "That Aman Singh must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Ankit Kushwaha... impersonator"
+      }
+    ]
+  }
+}
