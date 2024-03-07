@@ -44,7 +44,7 @@ function App() {
         </>
       )}
       <Portfolio projects={resumeData?.resume?.projects} />
-      <Testimonials testimonials={resumeData?.testimonials} />
+      {/* <Testimonials testimonials={resumeData?.testimonials} /> */}
       <Contact
         address={resumeData?.address}
         about={resumeData?.about}

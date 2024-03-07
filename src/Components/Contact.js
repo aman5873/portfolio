@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import Loading from "react-fullscreen-loading";
+import axios from "axios";
+
+import FormResponseModal from "./FormResponseModal";
+
+async function postContactFormData(data) {
+  const api_url = `https://x8ki-letl-twmt.n7.xano.io/api:5Qh37sEM/portfolio_contact_form_api`;
+  return await axios.post(api_url, data).then((res) => {
+    return res;
+  });
+}
 
 function Contact({ address, contactMeMessage = null, about }) {
   // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
@@ -7,15 +18,59 @@ function Contact({ address, contactMeMessage = null, about }) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [showForm, setShowForm] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  let responseMessage =
+    "Thank you for connecting!\nI appreciate your interest and will get back to you shortly.";
+
+  function resetForm() {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  }
+
   const handleClick = (e) => {
     e.preventDefault();
-    window.open(
-      `mailto:chauhanaman4002@gmail.com?subject=${subject}&body=${name}: ${message}`
-    );
+    const formData = {
+      name: name,
+      subject: subject,
+      email: email,
+
+      message: message,
+    };
+
+    // setIsRefreshing(true);
+    // postContactFormData(formData).then((res) => {
+    //   console.log("post form ", res);
+    //   setIsRefreshing(false);
+    //   if (res?.data?.status) {
+    setShowForm(true);
+    //     resetForm();
+    //   } else {
+    //     responseMessage=null
+
+    //   }
+    // });
   };
 
   return (
-    <>
+    <div>
+      <Loading
+        loading={isRefreshing}
+        background="#fff6"
+        loaderColor="#000000"
+      />
+
+      <FormResponseModal
+        show={showForm}
+        message={responseMessage ?? "Internal Server Error!"}
+        variant={responseMessage ? "Success" : "Error"}
+        handleClose={() => {
+          setShowForm(false);
+        }}
+      />
+
       {address && about && (
         <section id="contact">
           <div className="row section-head">
@@ -137,7 +192,7 @@ function Contact({ address, contactMeMessage = null, about }) {
           </div>
         </section>
       )}
-    </>
+    </div>
   );
 }
 
