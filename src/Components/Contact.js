@@ -10,9 +10,14 @@ async function postContactFormData(data) {
     return res;
   });
 }
+async function sendSlackNotification(data) {
+  const api_url = `https://server-api-9ije.onrender.com/slack_notification/`;
+  return await axios.post(api_url, data).then((res) => {
+    return res;
+  });
+}
 
 function Contact({ address, contactMeMessage = null, about }) {
-  // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
@@ -36,22 +41,25 @@ function Contact({ address, contactMeMessage = null, about }) {
       name: name,
       subject: subject,
       email: email,
-
       message: message,
     };
-
-    // setIsRefreshing(true);
-    // postContactFormData(formData).then((res) => {
-    //   console.log("post form ", res);
-    //   setIsRefreshing(false);
-    //   if (res?.data?.status) {
-    setShowForm(true);
-    //     resetForm();
-    //   } else {
-    //     responseMessage=null
-
-    //   }
-    // });
+    let slackMessage = "\n-------------------\nportfolio contact-form\n{\n";
+    for (const key in formData) {
+      if (formData.hasOwnProperty(key)) {
+        slackMessage += `${key}: "${formData[key]}",\n-----------------\n`;
+      }
+    }
+    setIsRefreshing(true);
+    postContactFormData(formData).then((res) => {
+      setIsRefreshing(false);
+      if (res?.data?.status) {
+        setShowForm(true);
+        sendSlackNotification({ message: `${slackMessage}\n}` });
+        resetForm();
+      } else {
+        responseMessage = null;
+      }
+    });
   };
 
   return (

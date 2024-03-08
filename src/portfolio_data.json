@@ -1,0 +1,169 @@
+{
+  "id": 3,
+  "created_at": 0,
+  "testimonials": "",
+  "contactMeMessage": "",
+  "about": {
+    "name": "Aman Singh Chauhan",
+    "occupation": "React Native \u0026 MERN Stack Developer",
+    "description": "Developer by Day, Founder \u0026\u0026 Freelancer by Night.",
+    "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795246/portfolio/kb4v1pp1omv5nnlxmmoc.jpg",
+    "bio": "My name is Aman, I\u0027m a React Native \u0026 MERN Stack Developer. Currently I\u0027m working at EquateMe as a junior developer",
+    "contact_message": "Get in touch with me to receive further details.",
+    "email": "chauhanaman4002@gmail.com.com",
+    "phone": "+918750048406"
+  },
+  "address": {
+    "street": "660/05",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "country": "India",
+    "zip": "122001"
+  },
+  "social": [
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=100010414778758",
+      "className": "fa fa-facebook"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/aman-singh-chauhan-1907711b6/",
+      "className": "fa fa-linkedin"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/aman_chauhan.07/",
+      "className": "fa fa-instagram"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/aman5873",
+      "className": "fa fa-github"
+    }
+  ],
+  "resume": {
+    "resumeDownload": "https://drive.google.com/file/d/1QYgYGWk3cFhtOrrmlsgBu9ghDl1BpcyX/view?usp=sharing",
+    "education": [
+      {
+        "hight_school": "P.S Central School",
+        "intermediate_school": "S.D Sr. Sec. School",
+        "university": "IGNOU New Delhi",
+        "degree": "Bachelor of Computer Application",
+        "graduated": "BCA"
+      }
+    ],
+    "work": [
+      {
+        "company": "EquateMe",
+        "title": "Developer",
+        "years": "March 2022 - Present",
+        "description": [
+          "Develop user-friendly, responsive web applications using React.js.",
+          "Develop, test, and maintain mobile applications for iOS and Android platforms using React Native."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Javascript",
+        "level": "80%"
+      },
+      {
+        "name": "React",
+        "level": "70%"
+      },
+      {
+        "name": "React Native",
+        "level": "50%"
+      },
+      {
+        "name": "Next Js",
+        "level": "50%"
+      },
+      {
+        "name": "Redux",
+        "level": ""
+      },
+      {
+        "name": "",
+        "level": ""
+      },
+      {
+        "name": "mui",
+        "level": ""
+      },
+      {
+        "name": "Bootstrap",
+        "level": ""
+      },
+      {
+        "name": "Sass",
+        "level": ""
+      },
+      {
+        "name": "",
+        "level": ""
+      },
+      {
+        "name": "Node Js",
+        "level": "60%"
+      },
+      {
+        "name": "Express Js",
+        "level": ""
+      },
+      {
+        "name": "Mongodb",
+        "level": "50%"
+      },
+      {
+        "name": "Django",
+        "level": "40%"
+      },
+      {
+        "name": "Python",
+        "level": "50%"
+      },
+      {
+        "name": "",
+        "level": ""
+      },
+      {
+        "name": "Git",
+        "level": ""
+      },
+      {
+        "name": "Google Analytics",
+        "level": "65%"
+      },
+      {
+        "name": "Aws",
+        "level": "30%"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Amazon Clone with React",
+        "category": "Amazon Clone built with ReactJS \u0026 stripe",
+        "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795305/portfolio/projects-image/l7wxdxiwl4tbpfq31uqf.png",
+        "url": "https://project-5db03.firebaseapp.com/",
+        "image_fallback": "amazon-clone"
+      },
+      {
+        "title": "My_Blog",
+        "category": "My first web development project  My_Blog",
+        "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795304/portfolio/projects-image/fjs2e0i78ogn7v2jydot.png",
+        "url": "https://aman5873.github.io/demoBlog/",
+        "image_fallback": "bolg"
+      },
+      {
+        "title": "WeatherApp",
+        "category": "It Shows city’s weather using Fetch API\u0022",
+        "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795308/portfolio/projects-image/tvqftgx4kff112qn4okh.png",
+        "url": "https://weather07-app.herokuapp.com/",
+        "image_fallback": "weather"
+      }
+    ]
+  }
+}

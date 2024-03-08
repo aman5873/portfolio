@@ -13,7 +13,7 @@ function Footer({ social, about }) {
                 {social.map((network) => {
                   return (
                     <li key={network.name}>
-                      <a href={network.url}>
+                      <a href={network.url} target="_blank">
                         <i className={network.className}></i>
                       </a>
                     </li>
