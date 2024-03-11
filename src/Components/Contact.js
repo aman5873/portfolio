@@ -43,10 +43,11 @@ function Contact({ address, contactMeMessage = null, about }) {
       email: email,
       message: message,
     };
-    let slackMessage = "\n-------------------\nportfolio contact-form\n{\n";
+    let slackMessage =
+      "\n\n-----------------------\nportfolio contact-form\n{\n";
     for (const key in formData) {
       if (formData.hasOwnProperty(key)) {
-        slackMessage += `${key}: "${formData[key]}",\n-----------------\n`;
+        slackMessage += `${key}: "${formData[key]}",`;
       }
     }
     setIsRefreshing(true);
