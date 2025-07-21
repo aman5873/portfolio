@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "portfolio-abcb2"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

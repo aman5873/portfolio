@@ -60,13 +60,13 @@ function Resume({ resume }) {
         <div className="nine columns main-col">
           <div className="row item">
             <div className="twelve columns">
-              {education.map(function (educationObj) {
+              {education.map((educationObj, index) => {
                 return (
-                  <div key={educationObj.intermediate_school}>
-                    <h3>{educationObj.university}</h3>
+                  <div key={`education-${index}`}>
+                    <h3>{educationObj?.university}</h3>
                     <p className="info">
-                      {educationObj.degree} <span>&bull;</span>
-                      <em className="date">{educationObj.graduated}</em>
+                      {educationObj?.degree} <span>&bull;</span>
+                      <em className="date">{educationObj?.graduated}</em>
                     </p>
                   </div>
                 );
@@ -115,25 +115,21 @@ function Resume({ resume }) {
           <div
             style={{ display: "flex", gap: 5, flexWrap: "wrap", width: "100%" }}
           >
-            {skills.map(function (skillObj, index) {
+            {skills?.map((skillObj, index) => {
               const iconURL = findIconURL(skillObj.name);
+              if (!skillObj.name?.length) return null;
 
               return (
-                <>
-                  {skillObj.name?.length > 0 ? (
-                    <img
-                      className="skill-icon-img"
-                      src={iconURL}
-                      alt=""
-                      key={`skill-icon-${index + 1}`}
-                    />
-                  ) : (
-                    <div style={{ height: 7, width: "100%" }}></div>
-                  )}
-                </>
+                <img
+                  key={`skill-icon-${index + 1}`}
+                  className="skill-icon-img"
+                  src={iconURL}
+                  alt={skillObj.name}
+                />
               );
             })}
           </div>
+
           {/* <div className="bars">
             <ul className="skills">
               {skills.map(function (skillObj) {
