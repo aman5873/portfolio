@@ -5,10 +5,10 @@
   "contactMeMessage": "",
   "about": {
     "name": "Aman Singh Chauhan",
-    "occupation": "React Native \u0026 MERN Stack Developer",
-    "description": "Developer by Day, Founder \u0026\u0026 Freelancer by Night.",
-    "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795246/portfolio/kb4v1pp1omv5nnlxmmoc.jpg",
-    "bio": "My name is Aman, I\u0027m a React Native \u0026 MERN Stack Developer. Currently I\u0027m working at EquateMe as a junior developer",
+    "occupation": "React Native & MERN Stack Developer",
+    "description": "Developer by Day, Founder && Freelancer by Night.",
+    "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1756047331/portfolio/profile-image_xojb0g.jpg",
+    "bio": "My name is Aman, I'm a React Native & MERN Stack Developer. Currently I'm working at EquateMe as a junior developer",
     "contact_message": "Get in touch with me to receive further details.",
     "email": "chauhanaman4002@gmail.com.com",
     "phone": "+918750048406"
@@ -43,7 +43,7 @@
     }
   ],
   "resume": {
-    "resumeDownload": "https://drive.google.com/file/d/1QYgYGWk3cFhtOrrmlsgBu9ghDl1BpcyX/view?usp=sharing",
+    "resumeDownload": "https://drive.google.com/file/d/1uhGhxOeKd745lBNwcVYcdO7oMlBu41Bz/view?usp=sharing",
     "education": [
       {
         "hight_school": "P.S Central School",
@@ -98,10 +98,6 @@
         "level": ""
       },
       {
-        "name": "Sass",
-        "level": ""
-      },
-      {
         "name": "",
         "level": ""
       },
@@ -145,9 +141,10 @@
     "projects": [
       {
         "title": "Amazon Clone with React",
-        "category": "Amazon Clone built with ReactJS \u0026 stripe",
+        "category": "Amazon Clone built with ReactJS & stripe",
         "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795305/portfolio/projects-image/l7wxdxiwl4tbpfq31uqf.png",
         "url": "https://project-5db03.firebaseapp.com/",
+        "git_url": "https://github.com/aman5873/amazon_clone",
         "image_fallback": "amazon-clone"
       },
       {
@@ -155,14 +152,24 @@
         "category": "My first web development project  My_Blog",
         "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795304/portfolio/projects-image/fjs2e0i78ogn7v2jydot.png",
         "url": "https://aman5873.github.io/demoBlog/",
+        "git_url": "https://github.com/aman5873/demoBlog",
         "image_fallback": "bolg"
       },
       {
-        "title": "WeatherApp",
-        "category": "It Shows city’s weather using Fetch API\u0022",
-        "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1709795308/portfolio/projects-image/tvqftgx4kff112qn4okh.png",
-        "url": "https://weather07-app.herokuapp.com/",
-        "image_fallback": "weather"
+        "title": "DevConnect",
+        "category": "A customizable developer portfolio builder with GitHub integration, live preview, and dynamic section editing.",
+        "image": "https://res.cloudinary.com/dirjxexal/image/upload/v1753123030/Screenshot_2025-07-22_at_12.04.43_AM_q5yeou.png",
+        "url": "https://dev-connect-lac-alpha.vercel.app/",
+        "git_url": "https://github.com/aman5873/dev-connect",
+        "image_fallback": "dev-connect"
+      },
+      {
+        "title": "Job Listing",
+        "category": "Mini Job Board is a full-stack job listing web app built with React, Express, and MongoDB. Users can view, filter, and add jobs with client/server-side validation and a responsive UI.",
+        "image": "https://res.cloudinary.com/dirjxexal/image/upload/c_crop,ar_16:9/v1755406513/portfolio/projects-image/Screenshot_2025-08-17_at_10.22.07_AM_tcrrf2.png",
+        "url": "https://mini-job-board-mu-ashy.vercel.app/",
+        "git_url": "https://github.com/aman5873/mini-job-board",
+        "image_fallback": "job-listing"
       }
     ]
   }

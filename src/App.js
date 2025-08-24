@@ -9,8 +9,8 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 // import Testimonials from "./Components/Testimonials";
-import Portfolio from "./Components/Portfolio";
 import portfolio_data from "./portfolio_data.json";
+import ProjectsFeed from "./Components/Portfolio";
 
 function App() {
   const [resumeData, setResumeData] = useState(portfolio_data);
@@ -44,7 +44,7 @@ function App() {
           <Resume resume={resumeData?.resume} />
         </>
       )}
-      <Portfolio projects={resumeData?.resume?.projects} />
+      <ProjectsFeed projects={resumeData?.resume?.projects} />
       {/* <Testimonials testimonials={resumeData?.testimonials} /> */}
       <Contact
         address={resumeData?.address}

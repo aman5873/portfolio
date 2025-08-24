@@ -37,6 +37,8 @@ const skillIcons = {
   aws: "https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white",
   google_analytics:
     "https://img.shields.io/badge/Google%20Analytics-E37400.svg?style=for-the-badge&logo=Google-Analytics&logoColor=white",
+  python:
+    "https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white",
 };
 
 function findIconURL(skillName) {

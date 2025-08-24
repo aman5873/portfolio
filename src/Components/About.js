@@ -9,7 +9,8 @@ function About(props) {
         <div className="three columns">
           <img
             className="profile-pic"
-            src={about?.image}
+            src={"./images/profile-image.jpg"}
+            // src={about?.image}
             onError={(err) => {
               err.target.src = "images/profile-image.jpg";
             }}
